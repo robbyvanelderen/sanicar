@@ -1,0 +1,25 @@
+{% include '_header.twig' %}
+
+<div id="header">
+	<div id="slogan">De oplossing tijdens uw verbouwing of evenement</div>
+	<div id="logo"><img src="{{ paths.theme }}images/logo.png" /></div>
+</div>
+
+<div id="bodysection">
+	<div id="navigation">
+		{% setcontent mobiele_badkamer = 'page/mobiele-badkamer' %} 
+		<div id="mobielebadkamer">{{mobiele_badkamer.title}}</div>
+		<div id="mobielebadkamer-content">
+			{{mobiele_badkamer.body}}
+		</div>
+		{% setcontent wc_wagens = 'page/wc-wagens' %}
+		<div id="wcwagens">{{wc_wagens.title}}</div>
+		<div id="wcwagens-content">
+			{{wc_wagens.body}}
+		</div>
+	</div>
+<div id="startbeeld"><img src="{{ paths.theme }}images/home_beeld.png" /></div>
+
+</div>
+
+{% include '_footer.twig' %}
