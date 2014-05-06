@@ -35,41 +35,51 @@ class __TwigTemplate_167acd83bc2af0e82f5fdcecb7e2f655b57be787f6f2e67a58d82cec77d
         $context['mobiele_badkamer'] =         $template_storage->getContent("page/mobiele-badkamer", array (
 ) );
         echo " 
+\t\t
 \t\t<div id=\"mobielebadkamer\">";
-        // line 11
+        // line 12
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["mobiele_badkamer"]) ? $context["mobiele_badkamer"] : null), "title"), "html", null, true);
         echo "</div>
 \t\t<div id=\"mobielebadkamer-content\">
+\t\t\t<img src='/files/";
+        // line 14
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["mobiele_badkamer"]) ? $context["mobiele_badkamer"] : null), "image"), "html", null, true);
+        echo "'>
 \t\t\t";
-        // line 13
+        // line 15
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["mobiele_badkamer"]) ? $context["mobiele_badkamer"] : null), "body"), "html", null, true);
         echo "
 \t\t</div>
 \t\t";
-        // line 15
+        // line 17
         $template_storage = new Bolt\Storage($context['app']);
         $context['wc_wagens'] =         $template_storage->getContent("page/wc-wagens", array (
 ) );
-        // line 16
+        // line 18
         echo "\t\t<div id=\"wcwagens\">";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["wc_wagens"]) ? $context["wc_wagens"] : null), "title"), "html", null, true);
         echo "</div>
 \t\t<div id=\"wcwagens-content\">
 \t\t\t";
-        // line 18
+        // line 20
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["wc_wagens"]) ? $context["wc_wagens"] : null), "body"), "html", null, true);
         echo "
 \t\t</div>
 \t</div>
 <div id=\"startbeeld\"><img src=\"";
-        // line 21
+        // line 23
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme"), "html", null, true);
         echo "images/home_beeld.png\" /></div>
 
 </div>
 
 ";
-        // line 25
+        // line 27
+        echo $this->env->getExtension('Bolt')->printDump((isset($context["mobiele_badkamer"]) ? $context["mobiele_badkamer"] : null));
+        echo "
+
+";
+        // line 29
         $this->env->loadTemplate("_footer.twig")->display($context);
     }
 
@@ -85,6 +95,6 @@ class __TwigTemplate_167acd83bc2af0e82f5fdcecb7e2f655b57be787f6f2e67a58d82cec77d
 
     public function getDebugInfo()
     {
-        return array (  73 => 25,  66 => 21,  60 => 18,  54 => 16,  50 => 15,  45 => 13,  40 => 11,  34 => 10,  26 => 5,  21 => 2,  19 => 1,);
+        return array (  83 => 29,  78 => 27,  71 => 23,  65 => 20,  59 => 18,  55 => 17,  50 => 15,  46 => 14,  41 => 12,  34 => 10,  26 => 5,  21 => 2,  19 => 1,);
     }
 }

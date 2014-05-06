@@ -8,8 +8,10 @@
 <div id="bodysection">
 	<div id="navigation">
 		{% setcontent mobiele_badkamer = 'page/mobiele-badkamer' %} 
+		
 		<div id="mobielebadkamer">{{mobiele_badkamer.title}}</div>
 		<div id="mobielebadkamer-content">
+			<img src='/files/{{mobiele_badkamer.image}}'>
 			{{mobiele_badkamer.body}}
 		</div>
 		{% setcontent wc_wagens = 'page/wc-wagens' %}
@@ -21,5 +23,6 @@
 <div id="startbeeld"><img src="{{ paths.theme }}images/home_beeld.png" /></div>
 
 </div>
+
 
 {% include '_footer.twig' %}
